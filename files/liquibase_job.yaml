@@ -23,6 +23,9 @@ metadata:
     spec:
       automountServiceAccountToken: false
       serviceAccountName: default
+      template:
+        spec:
+          restartPolicy: Never
       containers:
         - name: b4b-paytas-pa-liquibase
           image: "hello-world:latest"
