@@ -1,0 +1,21 @@
+---
+# Source: b4b-paytas-pa-liquibase/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: paytas-pa-service-b4b-paytas-pa-liquibase
+  namespace: int-b4b-pa
+  labels:
+    helm.sh/chart: b4b-paytas-pa-liquibase-0.0.1
+    app.kubernetes.io/name: paytas-pa-service
+    app.kubernetes.io/instance: b4b-paytas-pa-liquibase
+    app.kubernetes.io/version: "0.0.1"
+    app.kubernetes.io/managed-by: Helm
+data:
+  DB_TYPE: postgresql
+  DB_VERSION: 0.0.1
+  LIQUI_CONTEXT: pa-service
+  PAYTAS_DB_CONNECTION_URL: jdbc:postgresql://postgres14.dev.int.master.lan/int_b4b_pa?currentSchema=public
+  PAYTAS_DB_NAME: int_b4b_pa
+  PAYTAS_DB_USERNAME: int_b4b_pa_user
+  TZ: Europe/Rome
