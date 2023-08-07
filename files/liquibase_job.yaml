@@ -80,5 +80,6 @@ metadata:
                   key: TZ
             #envFieldRef
       template:
-        restartPolicy: Never
+        spec:
+          restartPolicy: Never
       terminationGracePeriodSeconds:
