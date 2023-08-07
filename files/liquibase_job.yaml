@@ -32,7 +32,7 @@ spec:
         - name: gitlab-5005
       containers:
         - name: b4b-paytas-pa-liquibase
-          image: "gitlab.int.master.lan:5005/delivery/b4b/b4b-delivery-paytas-pa-service/b4b-paytas-pa-liquibase/b4b-paytas-pa-liquibase:0.0.1"
+          image: "hello-world:latest"
           imagePullPolicy: Always
           resources:
             null
