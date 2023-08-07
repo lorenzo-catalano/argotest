@@ -3,7 +3,9 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: pi
+  name: helloworld
+  annotations:
+    argocd.argoproj.io/hook: PreSync
 spec:
   template:
     spec:
