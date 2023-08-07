@@ -79,7 +79,4 @@ metadata:
                   name: paytas-pa-service-b4b-paytas-pa-liquibase
                   key: TZ
             #envFieldRef
-      template:
-        spec:
-          restartPolicy: Never
       terminationGracePeriodSeconds:
