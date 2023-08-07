@@ -12,5 +12,11 @@ spec:
       containers:
       - name: helloworld
         image: "hello-world:latest"
+        env:
+          - name: testsecret
+            valueFrom:
+              secretKeyRef:
+                name: paytas-pa-service-b4b-paytas-pa-liquibase
+                key: PAYTAS_DB_OWNER
       restartPolicy: Never
   backoffLimit: 4
