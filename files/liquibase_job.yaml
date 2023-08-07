@@ -6,6 +6,7 @@ metadata:
   name: helloworld
   annotations:
     argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/sync-wave: "-4"
 spec:
   template:
     spec:
