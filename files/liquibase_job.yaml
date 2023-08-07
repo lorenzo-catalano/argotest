@@ -28,8 +28,6 @@ spec:
     spec:
       automountServiceAccountToken: false
       serviceAccountName: default
-      imagePullSecrets:
-        - name: gitlab-5005
       containers:
         - name: b4b-paytas-pa-liquibase
           image: "hello-world:latest"
